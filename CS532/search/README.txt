@@ -7,7 +7,8 @@ Project: Homework 2
 
 #Description
 This implements a simplified search command in C. 
-The program recursively traverses a directory hierarchy and print files and directory is given, the program starts from the current directory.
+The program recursively traverses a directory hierarchy and print files and directories. 
+If no file is given, the program starts from the current directory.
 The program uses directory system calls such as opendir(), readdir(), closedir(),lstat() and readlink().
 It also uses a function pointer to choose between normal printing and detailed printing for -S option.
 
@@ -18,7 +19,7 @@ Prints detailed information for each file or directory. The information includes
 For directories, the size is printed as 0 as required by the assignment.
 
 -s <size>
-Prints regular files whose size is less than or equal to the given size u=in bytes.
+Prints regular files whose size is less than or equal to the given size in bytes.
 
 -f <pattern> <depth>
 Prints entries whose name contains the given pattern and whose depth is less than or equal to the given depth.
@@ -32,13 +33,13 @@ Prints directories only.
 
 Symbolic Links:
 Symbolic links are printed in the required format
-Linkname(target)
+Linkname (target)
 
 #Compile:
 make
 
 #Run:
-./search[options][directory]
+./search [options][directory]
 
 #Examples:
 ./search

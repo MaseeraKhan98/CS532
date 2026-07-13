@@ -3,7 +3,7 @@ Name: Maseera Khan
 BlazerId: mkhan52
 Project: HW2
 To compile: make
-To run: ./search [-S] [-s size] [-f pattern depth] [-t f[d]] [directory]
+To run: ./search [-S] [-s size] [-f pattern depth] [-t f|d] [directory]
 */
 
 #include<stdio.h>
@@ -85,7 +85,7 @@ int main(int argc, char *argv[]){
                 break;
 
             default:
-                printf("Usage: ./search [-S] [-s size] [-f pattern depth] [-t f[d]] [directory]\n");
+                printf("Usage: ./search [-S] [-s size] [-f pattern depth] [-t f|d] [directory]\n");
                 return 1;
 
         }
